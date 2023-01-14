@@ -1,19 +1,11 @@
-import { red } from "@mui/material/colors";
 import React from "react";
-import { makeStyles } from '@material-ui/styles';
-const useStyle = makeStyles({
-  cc: {
-    backgroundColor: red
-  }
-})
+import ResponsiveAppBar from "./ResponsiveAppBar";
 
 function Layout(props) {
-  const classes = useStyle()
   return (
-    <div className={classes.cc}>
-      <div>
-        {props.children}
-      </div>
+    <div style={{height:"inherit"}}>
+    <ResponsiveAppBar/>
+      <div>{props.children}</div>
     </div>
   );
 }
