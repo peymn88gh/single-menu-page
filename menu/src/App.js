@@ -12,12 +12,12 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <React.Fragment>
+    <div style={{display:'inline-block', height:"100%", width:"100%"}}>
       <CssBaseline />
       <Layout>
       <MainPage />
       </Layout>
-    </React.Fragment>
+    </div>
   );
 }
 

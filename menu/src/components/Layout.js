@@ -3,9 +3,9 @@ import ResponsiveAppBar from "./ResponsiveAppBar";
 
 function Layout(props) {
   return (
-    <div style={{height:"inherit"}}>
+    <div style={{display:'inline-block', height:"100%", width:"100%"}}>
     <ResponsiveAppBar/>
-      <div>{props.children}</div>
+      <div style={{display:'inline-block', height:"100%", width:"100%"}}>{props.children}</div>
     </div>
   );
 }
